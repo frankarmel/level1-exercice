@@ -1,0 +1,39 @@
+/* css reset */
+ * {
+box-sizing :border-box; 
+padding: 0;
+margin: 0;
+ } 
+
+ body {
+    /*short form*/
+    padding: 60px 80px ;
+
+    /* long form*/
+   /* padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px; */
+ }
+ header#header-section {
+    height: 100vh;
+    background: url("WhatsApp\ Image\ 2022-11-21\ at\ 11.37.53\ \(1\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+header#header-section nav#navbar-container ul li.nav-items {
+    list-style-type: none;
+    display: inline;
+    font-size: 20px;
+    margin: 0px 5px;
+}
+header#header-section nav#navbar-container ul li.nav-items a.nav-link{
+    color: white;
+    text-decoration: none;
+    background-color: teal;
+    padding: 2px 4px;
+    border-radius: 7px;
+}
