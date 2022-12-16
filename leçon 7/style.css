@@ -1,0 +1,82 @@
+/*basic css reset*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'montserrat', sans-serif;
+}
+/*header styles*/
+header.header-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgba(11, 170, 190, 0.842);
+    /*background-color: linear(rgba(0,0,0,0.7),rgba());*/
+}
+
+header.header-container nav ul.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+header.header-container nav ul.navbar-container  a.nav-links {
+    text-decoration: none;
+    cursor: pointer;
+}
+header.header-container nav ul.navbar-container li:hover{
+    background-color: orange;
+    color: rgba(168, 166, 27, 0.781);
+    transition: 2s ease;
+    cursor: pointer;
+}
+header.header-container div.welcome-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header.header-container div.welcome-text-container h1.hi-text {
+    color: rgba(234, 238, 18, 0.753);
+}
+header.header-container div.welcome-text-container h2.name-text {
+    color: rgb(141, 153, 37);
+    position: relative;
+    animation: hopIn 4s infinite;
+}
+.text-large {
+font-size: 3rem;
+font-weight: 900;
+}
+.text-medium {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+@keyframes hopIn {
+  0% {
+    color: black;
+    top: -3rem;
+    left: -5rem;
+    font-size: 1.8rem;
+   }
+    25% {
+        color: green;
+        top: 2rem;
+        left: 5rem;
+        font-size: 2rem;
+    }
+    75% {
+        color: red;
+        top: 6rem;
+        left: 8rem;
+        font-size: 3rem;
+    }
+    100%  {
+        color: orange;
+        top: 0rem;
+        left: 0rem;
+        font-size: 3.5rem;
+      }   
+   
+}
