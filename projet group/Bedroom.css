@@ -1,0 +1,27 @@
+body{
+    background-color: #cccccc;
+}
+.item {
+    display: flex;
+     flex-wrap: wrap;     
+} /*{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+padding: 30px 20px;
+grid: column gap 20px;
+grid: row gap 30px;
+}*/
+.item img {
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2 ease;
+    padding: 0px;
+}
+.title img {
+
+}
+img:hover {
+    transform: scale(1.1)
+}
