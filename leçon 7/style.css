@@ -53,7 +53,67 @@ font-weight: 900;
     font-size: 1.5rem;
     font-weight: 600;
 }
+header.section-container {
+    width: 0%;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header.section-header h1 {
+    font-size: 2rem;
+    color: teal;
+    font-weight: 800;
+}
+header.section-header > p{
+    position: relative;
+    top: -2.1rem;
+    width: 8.5rem;
+    height: 5px;
+    background-color: orange;
+    /*transition: 1s ease-in;*/
+    animation: growOut 1s linear;
+}
+/*projects section*/
+div.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+div.project-preview img{
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+}
+div.project-preview img {
+    animation: scaleOut 1s linear;
+}
+
+@keyframes scaleOut {
+  form{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.2);
+  }
+}
+  
+@keyframes growOut {
+  form{
+    width: 0rem;
+    background-color: black;
+  }
+  to {
+    width: 8.5rem;
+    background-color: orange;
+  }
+}
 @keyframes hopIn {
+    
+
   0% {
     color: black;
     top: -3rem;
