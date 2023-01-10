@@ -1,0 +1,83 @@
+body{
+    background-color:whitesmoke;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 25px 0 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: lightgrey;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: large;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar ul li.bed::after{
+    width: 120%;
+}
+ .items {
+display: grid;
+grid-template-columns: repeat(3,1fr);
+padding: 30px 20px;
+grid-column-gap: 20px;
+grid-row-gap:30px;
+}
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 10px;
+}
+.item img:hover {
+    transform: scale(1.04)
+}
+fieldset{
+    border: none;
+    font-family: sans-serif;
+    background-color: lightgrey;
+}
+fieldset div{
+    text-align: center;
+    margin-top:10px;
+    }
+    fieldset.footer section{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+    footer fieldset.footer section a:hover{
+        transform: scale(1.2);
+    }
