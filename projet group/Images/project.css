@@ -6,6 +6,19 @@
     'GRAD' 0,
     'opsz' 48
   }
+ li.language_holder ul.languages {
+    display: none;
+    color: white;
+    position: absolute;
+  }
+   li.language_holder {
+    position: relative;
+
+  }
+  li.language_holder:hover .navbar ul li.language_holder ul.languages {
+    display: block;
+  }
+ 
 *{
     margin: 0;
     padding: 0;
